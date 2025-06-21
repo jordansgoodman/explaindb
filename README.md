@@ -1,4 +1,4 @@
-## 🎯 Features
+## Features
 
 - **Database Analysis**: Automatic schema extraction from SQLite databases
 - **LLM Documentation**: Generates comprehensive schema docs for AI consumption
@@ -6,14 +6,14 @@
 - **Query Execution**: Runs generated SQL and formats results
 - **Interactive CLI**: Command-line interface for easy querying
 
-## 🎯 Database
+## Database
 
 Uses the **Chinook** sample database (music store) with:
 - 11 tables, 25,000+ records
 - Artists, Albums, Tracks, Customers, Invoices, etc.
 - Complex relationships and foreign keys
 
-## 📖 Usage
+## Usage
 
 ### Interactive Mode
 ```bash
@@ -21,9 +21,8 @@ python genquery/cli.py
 ```
 
 ### Single Question
-```bash
-python genquery/cli.py "Show me all artists"
-```
+
+
 
 ### Programmatic
 ```python
@@ -31,13 +30,13 @@ from genquery.query_generator import process_question
 result = process_question("How many customers do we have?")
 ```
 
-## 🔧 Requirements
+## Requirements
 
 - Python 3.13+
 - OpenAI API key
 - Dependencies: `requests`, `openai`
 
-## 🔖 Example Queries
+## Example Queries
 
 - "Show me all artists"
 - "How many customers do we have?"
